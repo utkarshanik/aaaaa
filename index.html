@@ -9,64 +9,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
     <title>Assignment-1</title>
 </head>
 
 <body>
+ <!-- ------------Navbar-----------------------------    -->
     <div class="navbar">
         <div class="topnav">
-            <span class="tspan"><p>Team Members</p></span>
-            <div>
-                <span class="tspan" style="width: 20%; display: inline-block;color: gray;"><p>Team Members > Team Members</p></span>
+            <div class="logo">
+                <img src="images/logo_talent.png" alt="" srcset="">
             </div>
-            <div class="right">
+            
+            <span class="tspan"><p>Add Team Members</p></span>
+           <div>
+                <span class="tspan ts" ><p>Team Members > Team Members > Add Team Members </p></span>
+            </div> 
 
+            <div class="right">
                 <div class="ima" style="display: flex;justify-content: center;align-items: center;">
                     <img src="images/down-chevron.png" alt="" srcset="">
                 </div>
                 
                 <div class="images">
-                    
                     <div class="images">
                         <img src="images/image.png" alt="" srcset="">
                     </div>
+                    <div class="megan">
+                            <span class="m1" >Megan Roberts</span>
                         <div>
-                            <span style="display: inline-block;width: 100px;">Megan Roberts</span>
-                            <div>
-                                <span style="display: inline-block;color: grey;">Admin</span>
-                            </div>
-                        </div>
+                            <span class="m2" >Admin</span>
+                         </div>
+                    </div>
                 </div>
                 
                 <div class="images  ima">
                     <img src="images/settings.png" alt="" srcset="">
                 </div>
 
-                    <div class="images ima" style="margin-left: 2%;">
-                        <img src="images/icons8-notification-30.png" alt="" srcset="">
-                    </div>
-                  
-                    
-                    <div class="images ima">
-                        <img src="images/flg.png" alt="" srcset="">
-                        <p>EN(UK)</p>
-                        <img src="images/down-chevron.png" alt="" srcset="">
-
-                    </div>
-
+                <div class="images ima" style="margin-left: 2%;">
+                    <img src="images/icons8-notification-30.png" alt="" srcset="">
                 </div>
-                
+                    
+                <div class="images ima">
+                    <img src="images/flg.png" alt="" srcset="">
+                    <p style="margin: 0% 2px;">EN(UK)</p>
+                    <img src="images/down-chevron.png" alt="" srcset="">
+                </div>
 
+            </div>
         </div>
 
         <div class="leftnav">
-            <div class="logo">
-                <img src="images/logo_talent.png" alt="" srcset="">
-                <!-- <div class="img">img1</div> -->
-            </div>
+          
 
             <div class="dashboard">
-
                 <div class=" dash dash1">
                     <img src="images/dashboard.png" alt="" srcset="">
                     <span>DASHBOARD</span>
@@ -124,12 +122,139 @@
 
         </div>
     </div>
+
+<!-- --------------Main Body ------------------->
 <main>
     <div class="main">
+        <div class="formm">
+                <div class="mainhead">
+                    <div style="padding: 10px; display: inline-block;">
+                        <span><p>Add Team Members</p></span>
+                    <div>
+                            <span class="m2"><p>Add team member to the organisation </p></span>
+                        </div> 
+                    </div>
+                    <div class="btn save">
+                        <button class="bt cancel" type="submit">CANCEL</button>
+                        <button class="bt savebt" type="submit">SAVE</button>
+                    </div>
+        <hr>
+                </div>
 
+               <div class="form">
+                <!-- -------------------Profile image -->
+                <div class="imageprofile">
+                    <img src="images/profile.png" alt="">
+                </div>
+
+                <div class="formname">
+                    <div class=" fname firstname">
+                        <label class="required" for="">First Name </label>
+                        <input type="text" >
+                    </div>
+                    <div class=" fname lastname">
+                        <label class="required" for="">Last Name </label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class=" femail  ">
+                    <label class="required" for="">Email</label>
+                    <input type="text"placeholder="Example@mail.com">
+                </div>
+                
+                <div class="container">
+                    <div class="form-group">
+                        <label>Team Member Id</label>
+                        <input type="text" placeholder="Enter ID">
+                    </div>
+                    <div class="form-group">
+                        <label>Designation</label>
+                        <select>
+                            <option>Select Designation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Role</label>
+                        <select>
+                            <option>Select Role</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Department</label>
+                        <select>
+                            <option>Select Department</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Reporting Manager</label>
+                        <select>
+                            <option>Select Reporting Manager</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Joining Date</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Billing Status</label>
+                        <select>
+                            <option>Select Billing Status</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Availability Status</label>
+                        <select>
+                            <option>Select Availability Status</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Total Experience</label>
+                        <div style="display: flex; gap: 10px;">
+                            <select>
+                                <option>Year</option>
+                            </select>
+                            <select>
+                                <option>Month</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Cluster</label>
+                        <select>
+                            <option>Select Cluster</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Available From</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Tags</label>
+                        <select>
+                            <option>Select Tags</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="editor">Bio</label>
+                <div id="editor" style="height: 100px;"></div>
+
+                <div class="con">
+                    <div id="drop-area" class="upload-box">
+                        <p class="border-bottom-0">Drag and drop a file here or Choose file to upload</span></p>
+                        <input type="file" id="fileInput" hidden>
+                        <button class="upload-btn mt-2"> UPLOAD</button>
+                    </div>
+                </div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore molestiae, sunt esse natus mollitia deserunt debitis eligendi amet iure earum! Fugit assumenda saepe odio repellat amet nam eveniet ducimus.lorem500
+            </div> 
+        </div>
+        
+        
+        
     </div>
+
 </main>
 </body>
 <script src="temp.js"></script>
-
 </html>
