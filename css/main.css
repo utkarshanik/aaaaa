@@ -6,8 +6,8 @@
 }
 body
 {
-    /* width: 100vw;
-    height: 100vh; */
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column; 
     background-color: rgb(228, 230, 231);
@@ -16,6 +16,7 @@ body
 .navbar
 {
  position: absolute;
+ --bs-navbar-padding-y: 0 !important;
 }
 
 .topnav
@@ -29,7 +30,7 @@ body
     align-items: center;  
      position: fixed;
      /* overflow: hidden; */
-     /* top: 0; */
+     top: 0;
 }
 .tspan 
 {
@@ -189,10 +190,13 @@ width: 1.5%;
     width: 81vw;
     height: calc(100vh - 10vh); /* Remaining space after navbar */
     margin-left: 17vw; /* Push aside for leftnav */
-    margin-top: 12vh; /* Push below topnav */
+    margin-top: 9vh; /* Push below topnav */
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    background-color: rgb(228, 230, 231);
+    padding: 1%;
+
 /* top:0; */
 }
 .formm
@@ -218,7 +222,7 @@ width: 1.5%;
     /* top: 0; */
 }
 
-.btn
+.btnn
 {
     /* display: inline-block; */
     position: absolute;
@@ -230,7 +234,7 @@ width: 1.5%;
 
 .bt
 {
-    padding: 5%;
+    padding: 3%;
     border-radius: 0.4em;
     cursor: pointer;
 }
@@ -256,8 +260,8 @@ width: 1.5%;
     width: 81vw;
     min-height : 300px;
     background-color: #fff;
-    margin-top: 4%;
-    padding: 2% 1%;
+    margin-top: 6%;
+    padding: 1% 1%;
     box-sizing: border-box;
     position: relative;
     
@@ -310,7 +314,7 @@ input
     flex-direction: column;
     display: inline-flex ;
     gap: 4px;
-    top: 15%;
+    top: 7%;
 }
 
 label.required:after {
@@ -324,9 +328,28 @@ label.required:after {
     width: 95%;
     margin: auto;
     padding: 20px;
-    margin-top: 4%;
+    margin-top: 2%;
 }
-
+.container2
+{
+    border: 1px solid gray;
+}
+  .cont2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px; /* Space between grid items */
+    /* width: 95%; */
+    /* margin: auto; */
+    padding: 20px;
+    /* margin-top: 4%; */
+}
+.cont3 button
+{
+    border: none;
+    outline-style: none;
+    border-style: none;
+    background-color: transparent;
+}
 
 .form-group {
     display: flex;
