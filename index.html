@@ -127,7 +127,7 @@
 
 <!-- --------------Main Body ------------------->
 <main>
-    <div class="main">
+    <div class="main flex-grow-1">
         <div class="formm">
 
                 <div class="mainhead">
@@ -172,20 +172,31 @@
                     </div>
                     <div class="form-group">
                         <label>Designation</label>
-                        <select>
+                        <select >
                             <option>Select Designation</option>
+                            <option>Software Development</option>
+                            <option>Frontend Development</option>
+                            <option>Backend Development</option>
+                            <option> UI/UX Design</option>
+                            <option>Full Stack Development</option>
+                            <option>Software Developer</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label>Role</label>
                         <select>
                             <option>Select Role</option>
+                            <option>Mentor</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label>Department</label>
                         <select>
                             <option>Select Department</option>
+                            <option>Frontend Development</option>
+                            <option>Creative Design Team</option>
+                            <option>Software Development</option>
+                            <option>Backend Development</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -208,16 +219,32 @@
                         <label>Availability Status</label>
                         <select>
                             <option>Select Availability Status</option>
+                            <option>Available</option>
+                            <option>Not Available</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label>Total Experience</label>
                         <div style="display: flex; gap: 10px;">
-                            <select>
+                            <select >
                                 <option>Year</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
                             </select>
                             <select>
                                 <option>Month</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
                             </select>
                         </div>
                     </div>
@@ -225,6 +252,8 @@
                         <label>Cluster</label>
                         <select>
                             <option>Select Cluster</option>
+                            <option>Delivery</option>
+                            <option>Deployment</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -244,7 +273,7 @@
 
                 <div class="con">
                     <div id="drop-area" class="upload-box">
-                        <p class="border-bottom-0">Drag and drop a file here or Choose file to upload</span></p>
+                        <p class="mb-0 text-center">Drag and drop a file here or Choose file to upload</span></p>
                         <input type="file" id="fileInput" hidden>
                         <button class="upload-btn mt-2"> UPLOAD</button>
                     </div>
@@ -268,62 +297,34 @@
                     </select>
                 </div>
                 
-                <div class="container2 d-flex align-items center w-80 mt-2">
-                    <div class="cont1 flex-grow-1">
-                        <div class="lang mt-3 ms-5 d-flex flex-column h-100 align-items-start justify-content-evenly text-start ">
+                <div class="container2 d-flex align-items center justify-content-around mt-2">
+                    <!-- <div class="cont1 ">
+                        <div class="lang mt-3 d-flex flex-column w-70  h-100 align-items-start justify-content-evenly text-center ">
                                 <label for="" >HTML</label>
-                                <label for="" >PYTHON</label>
+                                <label for="" >Python</label>
                                 <label for="" >JAVASCRIPT</label>
                                 <label for="" >BOOTSTRAP</label>
                         </div>
-                    </div>
-                    <div class="cont2 w-90">
-                        <div class="form-group">
-                            <label>Team Member Id</label>
-                            <input type="text" placeholder="Enter ID">
+                    </div> -->
+                    <div class="cont2 ">
+                        <div class="form-group d-flex align-items-start justify-content-end">
+                        <span>HTML</span>
                         </div>
                         <div class="form-group">
-                            <label>Designation</label>
+                            <label>Level</label>
                             <select>
-                                <option>Select Designation</option>
+                                <option>Select Experience</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Role</label>
-                            <select>
-                                <option>Select Role</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Department</label>
-                            <select>
-                                <option>Select Department</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Reporting Manager</label>
-                            <select>
-                                <option>Select Reporting Manager</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Joining Date</label>
-                            <input type="date">
-                        </div>
-                        <div class="form-group">
-                            <label>Billing Status</label>
-                            <select>
-                                <option>Select Billing Status</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Availability Status</label>
-                            <select>
-                                <option>Select Availability Status</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Total Experience</label>
+                            <label>Experience Required</label>
                             <div style="display: flex; gap: 10px;">
                                 <select>
                                     <option>Year</option>
@@ -334,33 +335,146 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Cluster</label>
+                            <label>Assessed By</label>
                             <select>
-                                <option>Select Cluster</option>
+                                <option>Select Assessed By</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Available From</label>
+                            <label>Assessed On</label>
                             <input type="date">
                         </div>
+                        <div class="form-group d-flex align-items-center justify-content-end">
+                            <button class="lang"><img src="images/icons8-delete-30.png" alt=""></button>
+                            </div>
+                        <div class="form-group d-flex align-items-start justify-content-end">
+                            <span>Python</span>
+                            </div>
                         <div class="form-group">
-                            <label>Tags</label>
+                            <label>Level</label>
                             <select>
-                                <option>Select Tags</option>
+                                <option>Select Experience</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="cont3 flex-grow-1">
-                        <div class="lang d-flex flex-column justify-content-evenly h-100 mt-3">
-                                <button class=""><img src="images/icons8-delete-30.png" alt=""></button>
-                                <button><img src="images/icons8-delete-30.png" alt=""></button>
-                                <button><img src="images/icons8-delete-30.png" alt=""></button>
-                                <button><img src="images/icons8-delete-30.png" alt=""></button>
-                            <!-- <label for="">HTML</label> -->
-                            <!-- <label for="">PYTHON</label> -->
-                            <!-- <label for="">JAVASCRIPT</label> -->
-                            <!-- <label for="">BOOTSTRAP</label> -->
+                        <div class="form-group">
+                            <label>Experience Required</label>
+                            <div style="display: flex; gap: 10px;">
+                                <select>
+                                    <option>Year</option>
+                                </select>
+                                <select>
+                                    <option>Month</option>
+                                </select>
+                            </div>
                         </div>
+                        <div class="form-group">
+                            <label>Assessed By</label>
+                            <select>
+                                <option>Select Assessed By</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed On</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group d-flex align-items-center justify-content-end">
+                            <button class="lang"><img src="images/icons8-delete-30.png" alt=""></button>
+                    </div>
+                        <div class="form-group d-flex align-items-start justify-content-end">
+                            <span>Css</span>
+                            </div>
+                        <div class="form-group">
+                            <label>Level</label>
+                            <select>
+                                <option>Select Experience</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Experience Required</label>
+                            <div style="display: flex; gap: 10px;">
+                                <select>
+                                    <option>Year</option>
+                                </select>
+                                <select>
+                                    <option>Month</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed By</label>
+                            <select>
+                                <option>Select Assessed By</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed On</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group d-flex align-items-center justify-content-end">
+                            <button class="lang"><img src="images/icons8-delete-30.png" alt=""></button>
+                        </div>
+                        <div class="form-group d-flex align-items-start justify-content-end">
+                            <span>Bootstrap</span>
+                            </div>
+                        <div class="form-group">
+                            <label>Level</label>
+                            <select>
+                                <option>Select Experience</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Experience Required</label>
+                            <div style="display: flex; gap: 15px;">
+                                <select>
+                                    <option>Year</option>
+                                </select>
+                                <select>
+                                    <option>Month</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed By</label>
+                            <select>
+                                <option>Select Assessed By</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed On</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group d-flex align-items-center justify-content-end">
+                            <button class="lang"><img src="images/icons8-delete-30.png" alt=""></button>
+                            </div>
+                      
+                    
+                    <!-- <div class="cont3 w-20 "> -->
+                        <!-- <div class="lang d-flex w-30 flex-column justify-content-evenly h-100 mt-3"> -->
+                                <!-- <button class=""><img src="images/icons8-delete-30.png" alt=""></button> -->
+                                <!-- <button><img src="images/icons8-delete-30.png" alt=""></button> -->
+                                <!-- <button><img src="images/icons8-delete-30.png" alt=""></button> -->
+                        <!-- </div> -->
                     <!-- <div class="cont3 flex-grow-1"></div> -->
                 </div>
 
