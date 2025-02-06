@@ -31,6 +31,7 @@ body
      position: fixed;
      /* overflow: hidden; */
      top: 0;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .tspan 
 {
@@ -112,7 +113,7 @@ width: 1.5%;
 .leftnav
 {
     height: 100vh;
-    width: 15vw; /* Adjust width */
+    width: 17vw; /* Adjust width */
     background:#fff;
     position: relative  ;
     padding: 1.5%;
@@ -120,7 +121,11 @@ width: 1.5%;
     /* position: fixed; */
     position: fixed; 
     top: 10vh;
-    overflow-y: auto
+    overflow-y: auto;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 5px 0px 5px 0px; */
+
+
+
     
 }
 
@@ -133,7 +138,7 @@ width: 1.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 12PX;
+    font-size: 13PX;
     font-weight: 600;
     color: gray;
 }
@@ -167,27 +172,13 @@ width: 1.5%;
 {
     width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 
 /* --------------------------------------------------------------------------------------- */
 /* main body */
 .main
 {
-    /* width: 81vw;
-    height: 100%;
-
-    /* background-color: rgb(199, 194, 194); */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* top: 13%;
-    right: 1%;
-    position: absolute;  */
-
-    /* Remaining space after leftnav */
-    /* width: calc(100vw - 13vw);  */
-    /* width: 81vw; */
     height: calc(100vh - 10vh); /* Remaining space after navbar */
     margin-left: 17vw; /* Push aside for leftnav */
     margin-top: 9vh; /* Push below topnav */
@@ -196,8 +187,6 @@ width: 1.5%;
     flex-direction: column;
     background-color: rgb(228, 230, 231);
     padding: 1%;
-
-/* top:0; */
 }
 .formm
 {
