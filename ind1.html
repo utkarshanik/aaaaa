@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+    <title>Assignment-1[wai]</title>
+</head>
+
+<body>
+ <!-- ------------Navbar-----------------------------    -->
+    <div class="navbar">
+        <div class="topnav">
+            <div class="logo">
+                <img src="images/logo_talent.png" alt="" srcset="">
+            </div>
+            
+            <span class="tspan"><p>Add Team Members</p></span>
+           <div>
+                <span class="tspan ts" ><p>Team Members > Team Members > Add Team Members </p></span>
+            </div> 
+
+            <div class="right">
+                <div class="ima" style="display: flex;justify-content: center;align-items: center;">
+                    <img src="images/down-chevron.png" alt="" srcset="">
+                </div>
+                
+                <div class="images">
+                    <div class="images">
+                        <img src="images/image.png" alt="" srcset="">
+                    </div>
+                    <div class="megan">
+                            <span class="m1" >Megan Roberts</span>
+                        <div>
+                            <span class="m2" >Admin</span>
+                         </div>
+                    </div>
+                </div>
+                
+                <div class="images  ima">
+                    <img src="images/settings.png" alt="" srcset="">
+                </div>
+
+                <div class="images ima not" style="margin-left: 2%;">
+                    <img src="images/icons8-notification-30.png" alt="" srcset="">
+                </div>
+                    
+                <div class="images ima">
+                    <img src="images/flg.png" alt="" srcset="">
+                    <p style="margin: 0% 2px;">EN(UK)</p>
+                    <img src="images/down-chevron.png" alt="" srcset="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="leftnav">
+
+            <div class="dashboard">
+                <div class=" dash dash1">
+                    <img src="images/dashboard.png" alt="" srcset="">
+                    <span>DASHBOARD</span>
+                    <div>
+                        <SPAN class="angle"><img  src="images/greater-than-symbol.png" alt="" srcset=""></SPAN>
+                    </div>
+                </div>
+            
+                <div class=" dash dash1">
+                    <img src="images/team.png" alt="" srcset="">
+                    <span>TEAM MEMBERS</span>
+                    <div>
+                        <SPAN class="angle" id="ang"><img src="images/down-chevron.png" alt="" srcset=""></SPAN>
+                    </div>
+                </div>
+
+                <div class=" dash dash1 subdash">
+                    <img src="images/team.png" alt="" srcset="">
+                    <span>TEAM MEMBERS</span>
+                    <div>
+                    </div>
+                </div>
+                <div class=" dash dash1 subdash">
+                    <img src="images/certificate.png" alt="" srcset="">
+                    <span>CERTIFICATION</span>
+                    <div>
+                    </div>
+                </div>
+                
+                
+                <div class=" dash dash1">
+                    <img src="images/folder-management.png" alt="" srcset="">
+                    <span>PROJECTS</span>
+                    <div>
+                        <SPAN class="angle"><img src="images/greater-than-symbol.png" alt="" srcset=""></SPAN>
+                    </div>
+                </div>
+                <div class=" dash dash1">
+                    <img src="images/public-relation.png" alt="" srcset="">
+                    <span>CLIENTS</span>
+                    <div>
+                        <SPAN class="angle"><img src="images/greater-than-symbol.png" alt="" srcset=""></SPAN>
+                    </div>
+                </div>
+                <div class=" dash dash1">
+                    <img src="images/online-education.png" alt="" srcset="">
+                    <span>LEARNING PATHS</span>
+                    <div>
+                        <SPAN class="angle"><img src="images/greater-than-symbol.png" alt="" srcset=""></SPAN>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------Main Body ------------------->
+<main>
+    <div class="main flex-grow-1">
+        <div class="formm">
+
+                <div class="mainhead">
+                    <div class="mob" style="padding: 10px; display: inline-block;">
+                        <span><p class="mb-0">Add Team Members</p></span>
+                    <div>
+                            <span class="m2 mb-0"><p>Add team member to the organisation </p></span>
+                        </div> 
+                    </div>
+                    <div class="btnn save">
+                        <button class="bt cancel" type="submit">CANCEL</button>
+                        <button class="bt savebt" type="submit">SAVE</button>
+                    </div>
+                    <hr class="m-0 mt-0">
+                </div>
+
+               <div class="form">
+                <!-- -------------------Profile image -->
+                <div class="imageprofile">
+                    <img src="images/profile.png" alt="">
+                </div>
+
+                <div class="formname">
+                    <div class=" fname firstname">
+                        <label class="required" for="">First Name </label>
+                        <input type="text" >
+                    </div>
+                    <div class=" fname lastname">
+                        <label class="required" for="">Last Name </label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class=" femail  ">
+                    <label class="required" for="">Email</label>
+                    <input type="text"placeholder="Example@mail.com">
+                </div>
+                
+                <div class="container">
+                    <div class="form-group">
+                        <label>Team Member Id</label>
+                        <input type="text" placeholder="Enter ID">
+                    </div>
+                    <div class="form-group">
+                        <label>Designation</label>
+                        <select >
+                            <option>Select Designation</option>
+                            <option>Software Development</option>
+                            <option>Frontend Development</option>
+                            <option>Backend Development</option>
+                            <option> UI/UX Design</option>
+                            <option>Full Stack Development</option>
+                            <option>Software Developer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Role</label>
+                        <select>
+                            <option>Select Role</option>
+                            <option>Mentor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Department</label>
+                        <select>
+                            <option>Select Department</option>
+                            <option>Frontend Development</option>
+                            <option>Creative Design Team</option>
+                            <option>Software Development</option>
+                            <option>Backend Development</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Reporting Manager</label>
+                        <select>
+                            <option>Select Reporting Manager</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Joining Date</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Billing Status</label>
+                        <select>
+                            <option>Select Billing Status</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Availability Status</label>
+                        <select>
+                            <option>Select Availability Status</option>
+                            <option>Available</option>
+                            <option>Not Available</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Total Experience</label>
+                        <div style="display: flex; gap: 10px;">
+                            <select >
+                                <option>Year</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                            </select>
+                            <select>
+                                <option>Month</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Cluster</label>
+                        <select>
+                            <option>Select Cluster</option>
+                            <option>Delivery</option>
+                            <option>Deployment</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Available From</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Tags</label>
+                        <select>
+                            <option>Select Tags</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="editor">Bio</label>
+                <div id="editor" style="height: 100px;"></div>
+
+                <div class="con">
+                    <div id="drop-area" class="upload-box">
+                        <p class="mb-0 text-center">Drag and drop a file here or Choose file to upload</span></p>
+                        <input type="file" id="fileInput" hidden>
+                        <button class="upload-btn mt-2"> UPLOAD</button>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mt-3">
+                    <span>Add Skill Sets</span> <!-- Span -->
+                    <hr class="flex-grow-1 me-2"> <!-- Line -->
+                  </div>
+                  
+                <div class="mt-3 form-group">
+                    <label>Skill Sets</label>
+                    <select name="" id="" > 
+                        <option>Select a skill sets</option>
+                        <option value="">HTML</option>
+                        <option value="">PYTHON</option>
+                        <option value="">CSS</option>
+                        <option value="">JAVA SCRIPT</option>
+                        <option value="">BOOTSTRAP</option>
+                        <option value="">CSS5</option>
+                    </select>
+                </div>
+                
+                <div class="container2 mb-4 d-flex align-items center justify-content-around mt-3">
+                    <div class="cont2 ">
+                        <div class="form-group d-flex align-items-start justify-content-end">
+                        <span>HTML</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Level</label>
+                            <select>
+                                <option>Select Experience</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Experience Required</label>
+                            <div style="display: flex; gap: 10px;">
+                                <select>
+                                    <option>Year</option>
+                                </select>
+                                <select>
+                                    <option>Month</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed By</label>
+                            <select>
+                                <option>Select Assessed By</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed On</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group d-flex align-items-center justify-content-end">
+                            <button class="lang"><img src="images/icons8-delete-30.png" alt=""></button>
+                            </div>
+                        <div class="form-group d-flex align-items-start justify-content-end">
+                            <span>Python</span>
+                            </div>
+                        <div class="form-group">
+                            <label>Level</label>
+                            <select>
+                                <option>Select Experience</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Experience Required</label>
+                            <div style="display: flex; gap: 10px;">
+                                <select>
+                                    <option>Year</option>
+                                </select>
+                                <select>
+                                    <option>Month</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed By</label>
+                            <select>
+                                <option>Select Assessed By</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed On</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group d-flex align-items-center justify-content-end">
+                            <button class="lang"><img src="images/icons8-delete-30.png" alt=""></button>
+                    </div>
+                        <div class="form-group d-flex align-items-start justify-content-end">
+                            <span>Css</span>
+                            </div>
+                        <div class="form-group">
+                            <label>Level</label>
+                            <select>
+                                <option>Select Experience</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Experience Required</label>
+                            <div style="display: flex; gap: 10px;">
+                                <select>
+                                    <option>Year</option>
+                                </select>
+                                <select>
+                                    <option>Month</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed By</label>
+                            <select>
+                                <option>Select Assessed By</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed On</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group d-flex align-items-center justify-content-end">
+                            <button class="lang"><img src="images/icons8-delete-30.png" alt=""></button>
+                        </div>
+                        <div class="form-group d-flex align-items-start justify-content-end">
+                            <span>Bootstrap</span>
+                            </div>
+                        <div class="form-group">
+                            <label>Level</label>
+                            <select>
+                                <option>Select Experience</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Experience Required</label>
+                            <div style="display: flex; gap: 15px;">
+                                <select>
+                                    <option>Year</option>
+                                </select>
+                                <select>
+                                    <option>Month</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed By</label>
+                            <select>
+                                <option>Select Assessed By</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Assessed On</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group d-flex align-items-center justify-content-end">
+                            <button class="lang"><img src="images/icons8-delete-30.png" alt=""></button>
+                            </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</main>
+</body>
+<script src="temp.js"></script>
+</html>
